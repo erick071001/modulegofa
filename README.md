@@ -85,4 +85,4 @@ Add the dependency
     )
 ex: 
 id = 12 with ic_sign_gofa12, id = 13 so icon is ic_sign_gofa13 
-Similar to the remaining signs
+Similar to the remaining signs in file ic_sign.zip.
