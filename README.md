@@ -83,3 +83,6 @@ Add the dependency
     @SerializedName("traffic_sign_id") val trafficSignId: Int?,
     @SerializedName("direction") val direction: Double?,
     )
+ex: 
+id = 12 with ic_sign_gofa12, id = 13 so icon is ic_sign_gofa13 
+Similar to the remaining signs
