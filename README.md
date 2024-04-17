@@ -1,3 +1,45 @@
+# Installation
+     Add it in your root build.gradle at the end of repositories:
+     
+     Groovy DSL
+     allprojects {
+         repositories {
+             ...
+             maven { url 'https://jitpack.io' }
+         }
+     }
+
+     Kotlin DSL
+     allprojects {
+         repositories {
+             ...
+             maven(url = "https://jitpack.io")
+         }
+     }
+     Add the dependency
+     
+     Groovy DSL
+     dependencies {
+         implementation 'com.github.gofa-software:gofa-speed-limit:1.0.7'
+     }
+
+     Kotlin DSL
+     dependencies {
+         implementation("com.github.gofa-software:gofa-speed-limit:1.0.7")
+     
+         val retrofitVersion = "2.9.0"
+         implementation("com.squareup.retrofit2:retrofit:$retrofitVersion")
+         implementation("com.squareup.retrofit2:converter-gson:$retrofitVersion")
+     
+         implementation("com.google.code.gson:gson:2.10.1")
+     
+         val coroutineVersion = "1.7.3"
+         implementation("org.jetbrains.kotlinx:kotlinx-coroutines-core:$coroutineVersion")
+         implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:$coroutineVersion")
+     
+         implementation("androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.0")
+     }
+
 # Call initGofa() in onCreate() of MainActivity
 
      private fun initGofa() {
@@ -31,7 +73,7 @@
 # Call when need update location 
      GofaSpeedLimit.getInstance(this).updateLocation(location)
 
-# 
+# Data model
     data class DatapointModel(
     @SerializedName("id") val id: Int?,
     @SerializedName("compass") val compass: String?,
