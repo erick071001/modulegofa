@@ -74,6 +74,8 @@ Add the dependency
 # Call when need update location 
      GofaSpeedLimit.getInstance(this).updateLocation(location)
 
+     Location form "import android.location.Location"
+     
 # Data model
     data class DatapointModel(
     @SerializedName("id") val id: Int?,
