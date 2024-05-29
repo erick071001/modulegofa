@@ -88,3 +88,4 @@ Add the dependency
 ex: 
 id = 12 with ic_sign_gofa12, id = 13 so icon is ic_sign_gofa13 
 Similar to the remaining signs in file ic_sign.zip.
+Note : 33 34 also use ic_sign_gofa32. id from 12 to 34. There is no need to process ids that are not in the sign list.
